@@ -22,9 +22,9 @@ import java.io.File;
 
 import org.junit.Test;
 import org.osgi.framework.BundleException;
-import org.slizaa.scanner.core.mvnresolver.MvnResolverServiceFactoryFactory;
-import org.slizaa.scanner.core.mvnresolver.api.IMvnResolverService;
-import org.slizaa.scanner.core.mvnresolver.api.IMvnResolverServiceFactory;
+import org.slizaa.core.mvnresolver.MvnResolverServiceFactoryFactory;
+import org.slizaa.core.mvnresolver.api.IMvnResolverService;
+import org.slizaa.core.mvnresolver.api.IMvnResolverServiceFactory;
 
 public class UberJarTest extends AbstractEclipseTest {
 

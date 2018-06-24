@@ -17,8 +17,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.slizaa.scanner.core</groupId>
-			<artifactId>org.slizaa.scanner.core.mvnresolver.uber</artifactId>
+			<groupId>org.slizaa.core</groupId>
+			<artifactId>org.slizaa.core.mvnresolver.uber</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
