@@ -1,0 +1,2 @@
+-exportcontents: org.slizaa.core.boltclient.*, !org.slizaa.core.boltclient.internal.*
+-sources: true
