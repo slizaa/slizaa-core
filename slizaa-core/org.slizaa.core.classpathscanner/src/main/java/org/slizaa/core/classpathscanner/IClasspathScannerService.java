@@ -17,7 +17,7 @@ public interface IClasspathScannerService {
    * <p>
    * </p>
    *
-   * @param annotation
+   * @param annotationType
    * @return
    */
   List<Class<?>> getExtensionsWithClassAnnotation(Class<? extends Annotation> annotationType);
@@ -36,7 +36,7 @@ public interface IClasspathScannerService {
    * <p>
    * </p>
    *
-   * @param annotation
+   * @param annotationType
    * @return
    */
   List<Class<?>> getExtensionsWithMethodAnnotation(Class<? extends Annotation> annotationType);

@@ -1,12 +1,9 @@
 /*******************************************************************************
- * Copyright (C) 2011-2017 Gerd Wuetherich (gerd@gerd-wuetherich.de).
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- * 
- * Contributors:
- *     Gerd Wuetherich (gerd@gerd-wuetherich.de) - initial API and implementation
+ * Copyright (C) 2011-2017 Gerd Wuetherich (gerd@gerd-wuetherich.de). All rights reserved. This program and the
+ * accompanying materials are made available under the terms of the Eclipse Public License v1.0 which accompanies this
+ * distribution, and is available at http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors: Gerd Wuetherich (gerd@gerd-wuetherich.de) - initial API and implementation
  ******************************************************************************/
 package org.slizaa.core.classpathscanner;
 
@@ -40,20 +37,23 @@ public class DefaultClassAnnotationHandler<T> implements IClassAnnotationMatchHa
    * Creates a new instance of type {@link DefaultClassAnnotationHandler}.
    * </p>
    *
-   * @param annotationToMatch
+   * @param transformationFunction
    */
   public DefaultClassAnnotationHandler(Function<Class<?>, T> transformationFunction) {
 
     //
-    _transformationFunction = checkNotNull(transformationFunction);
-    _collectedResult = new HashMap<>();
+    this._transformationFunction = checkNotNull(transformationFunction);
+    this._collectedResult = new HashMap<>();
   }
 
+  /**
+   * {@inheritDoc}
+   */
   @Override
   public void processMatch(Object codeSource, List<Class<?>> classesWithAnnotation) {
 
     //
-    Map<Class<?>, T> values = _collectedResult.computeIfAbsent(codeSource, key -> new HashMap<>());
+    Map<Class<?>, T> values = this._collectedResult.computeIfAbsent(codeSource, key -> new HashMap<>());
 
     //
     List<Class<?>> removedValues = new ArrayList<Class<?>>(values.keySet());
@@ -63,7 +63,7 @@ public class DefaultClassAnnotationHandler<T> implements IClassAnnotationMatchHa
     //
     classesWithAnnotation.forEach(key -> {
       if (!values.containsKey(key)) {
-        T value = _transformationFunction.apply(key);
+        T value = this._transformationFunction.apply(key);
         if (value != null) {
           values.put(key, value);
         }
@@ -72,6 +72,6 @@ public class DefaultClassAnnotationHandler<T> implements IClassAnnotationMatchHa
   }
 
   public List<T> getResult() {
-    return _collectedResult.values().stream().flatMap(m -> m.values().stream()).collect(Collectors.toList());
+    return this._collectedResult.values().stream().flatMap(m -> m.values().stream()).collect(Collectors.toList());
   }
 }
