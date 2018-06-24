@@ -17,7 +17,7 @@ import org.osgi.service.component.annotations.ReferenceCardinality;
 import org.osgi.service.component.annotations.ReferencePolicy;
 import org.osgi.service.http.HttpService;
 import org.osgi.service.http.NamespaceException;
-import org.slizaa.scanner.core.classpathscanner.IClasspathScannerService;
+import org.slizaa.core.classpathscanner.IClasspathScannerService;
 
 /**
  * <p>
