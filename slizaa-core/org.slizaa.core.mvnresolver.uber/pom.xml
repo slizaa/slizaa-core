@@ -42,7 +42,7 @@
 
 			<!-- -->
 			<plugin>
-				<groupId>org.slizaa.scanner.mojos</groupId>
+				<groupId>org.slizaa.core.mojos</groupId>
 				<artifactId>copydependencies-maven-plugin</artifactId>
 				<version>${project.version}</version>
 				<configuration>
