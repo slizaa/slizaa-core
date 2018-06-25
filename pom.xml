@@ -55,7 +55,8 @@
 	</properties>
 
 	<modules>
-		<module>slizaa-mojos</module>
+		<module>slizaa-mojos/copydependencies-maven-plugin</module>
+		<module>slizaa-mojos/ecoregenerator-maven-plugin</module>
 		<module>slizaa-core/org.slizaa.core.boltclient</module>
 		<module>slizaa-core/org.slizaa.core.boltclient.testfwk</module>
 		<module>slizaa-core/org.slizaa.core.classpathscanner</module>
