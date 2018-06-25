@@ -132,6 +132,7 @@ public class EcoreGeneratorMojo extends AbstractMojo {
         // Create the generator and set the model-level input object.
         Generator generator = new Generator();
         generator.setInput(genModel);
+        genModel.setValidateModel(true);
         genModel.setCanGenerate(true);
 
         // Generator model code.
