@@ -92,8 +92,10 @@ public class ExtractModelDefinitions {
         try {
           InputStream is = zipFile.getInputStream(zipEntry);
           Path p = Paths.get(targetPath + File.separator + path);
-          p.toFile().getParentFile().mkdirs();
-          Files.copy(is, p);
+          if (!p.toFile().exists()) {
+            p.toFile().getParentFile().mkdirs();
+            Files.copy(is, p);
+          }
         } catch (IOException e) {
           // TODO Auto-generated catch block
           e.printStackTrace();

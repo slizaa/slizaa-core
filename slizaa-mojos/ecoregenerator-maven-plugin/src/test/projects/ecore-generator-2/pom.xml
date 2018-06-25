@@ -17,7 +17,7 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.slizaa.mojos</groupId>
+				<groupId>org.slizaa.core.mojos</groupId>
 				<artifactId>ecoregenerator-maven-plugin</artifactId>
 				<version>${project.version}</version>
 				<executions>
