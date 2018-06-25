@@ -108,4 +108,22 @@ public class AbstractEcoreGeneratorTest {
   protected File getBasedir() {
     return this._basedir;
   }
+
+  /**
+   * <p>
+   * </p>
+   *
+   * @param params
+   * @return
+   */
+  protected String[] replaceSeparator(String... params) {
+    String[] result = new String[params.length];
+    for (int i = 0; i < params.length; i++) {
+      result[i] = params[i].replace('\\', File.separatorChar).replace('/', File.separatorChar);
+      if (result[i].endsWith(File.separator)) {
+        result[i] = result[i].substring(0, result[i].length() - 1) + '/';
+      }
+    }
+    return result;
+  }
 }
