@@ -30,6 +30,16 @@ public class BoltClientConnectionRule extends ExternalResource {
    * Creates a new instance of type {@link BoltClientConnectionRule}.
    * </p>
    *
+   */
+  public BoltClientConnectionRule() {
+    this("localhost", 5001);
+  }
+
+  /**
+   * <p>
+   * Creates a new instance of type {@link BoltClientConnectionRule}.
+   * </p>
+   *
    * @param host
    * @param port
    */
