@@ -5,7 +5,7 @@ package org.slizaa.core.boltclient.internal.gson;
 
 import java.lang.reflect.Type;
 
-import org.neo4j.driver.internal.InternalNode;
+import org.neo4j.driver.v1.types.Node;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -19,10 +19,10 @@ import com.google.gson.JsonSerializer;
  * @author Gerd W&uuml;therich (gerd@gerd-wuetherich.de)
  *
  */
-public class InternalNodeAdapter implements JsonSerializer<InternalNode> {
+public class InternalNodeAdapter implements JsonSerializer<Node> {
 
   @Override
-  public JsonElement serialize(InternalNode node, Type typeOfSrc, JsonSerializationContext context) {
+  public JsonElement serialize(Node node, Type typeOfSrc, JsonSerializationContext context) {
 
     // create result
     JsonObject result = new JsonObject();
