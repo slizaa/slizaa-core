@@ -53,6 +53,20 @@
 										</artifact>
 									</artifacts>
 								</feature>
+								<feature>
+									<id>org.slizaa.core.testfwk.feature</id>
+									<version>${project.version}</version>
+									<label>org.slizaa.core.testfwk.feature</label>
+									<providerName>${project.groupId}</providerName>
+									<description>${project.description}</description>
+									<generateSourceFeature>false</generateSourceFeature>
+									<artifacts>
+										<artifact>
+											<id>${project.groupId}:org.slizaa.core.boltclient.testfwk:${project.version}</id>
+											<transitive>false</transitive>
+										</artifact>
+									</artifacts>
+								</feature>
 							</featureDefinitions>
 						</configuration>
 					</execution>
