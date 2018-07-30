@@ -31,6 +31,7 @@ import org.slizaa.core.boltclient.IBoltClient;
 import org.slizaa.core.boltclient.IQueryResultConsumer;
 import org.slizaa.core.boltclient.internal.asynch.StatementCallable;
 import org.slizaa.core.boltclient.internal.asynch.StatementResultConsumerCallable;
+import org.slizaa.core.boltclient.internal.osgi.ServiceRegistrator;
 
 /**
  * <p>
@@ -115,14 +116,12 @@ public class BoltClientImpl implements IBoltClient {
     Config config = Config.build().withoutEncryption().toConfig();
     this._driver = GraphDatabase.driver(getUri(), config);
 
-    // // register adapter
-    // try {
-    // this._serviceRegistration = FrameworkUtil.getBundle(BoltClientImpl.class).getBundleContext()
-    // .registerService(new String[] { IGraphMetaDataProvider.class.getName(), Neo4jClient.class.getName() }, this,
-    // null);
-    // } catch (Exception exception) {
-    // //
-    // }
+    // register adapter
+    try {
+      ServiceRegistrator.registerAsOsgiService(this);
+    } catch (Exception e) {
+      // ignore
+    }
 
     //
     setConnected(true);
@@ -134,10 +133,12 @@ public class BoltClientImpl implements IBoltClient {
   @Override
   public void disconnect() {
 
-    // // register adapter
-    // if (this._serviceRegistration != null) {
-    // this._serviceRegistration.unregister();
-    // }
+    // unregister adapter
+    try {
+      ServiceRegistrator.unregisterAsOsgiService(this);
+    } catch (Exception e) {
+      // ignore
+    }
 
     //
     this._driver.close();
