@@ -1,0 +1,2 @@
+-exportcontents: org.slizaa.core.boltclient.testfwk.*
+-sources: true
