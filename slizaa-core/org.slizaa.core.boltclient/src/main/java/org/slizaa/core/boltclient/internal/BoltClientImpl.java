@@ -382,7 +382,7 @@ public class BoltClientImpl implements IBoltClient {
    */
   private void assertConnected() {
     if (!isConnected()) {
-      throw new RuntimeException();
+      throw new RuntimeException("BoltClient is not connected.");
     }
   }
 }
