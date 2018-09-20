@@ -59,13 +59,10 @@
 		<module>slizaa-mojos/ecoregenerator-maven-plugin</module>
 		<module>slizaa-core/org.slizaa.core.boltclient</module>
 		<module>slizaa-core/org.slizaa.core.boltclient.testfwk</module>
-		<module>slizaa-core/org.slizaa.core.classpathscanner</module>
-		<module>slizaa-core/org.slizaa.core.jersey.osgi</module>
 		<module>slizaa-core/org.slizaa.core.mvnresolver.api</module>
 		<module>slizaa-core/org.slizaa.core.mvnresolver.implementation</module>
 		<module>slizaa-core/org.slizaa.core.mvnresolver.uber</module>
 		<module>slizaa-core/org.slizaa.core.mvnresolver.itest</module>
-		<module>slizaa-core-p2/org.slizaa.core.p2-repo</module>
 	</modules>
 
 	<dependencyManagement>

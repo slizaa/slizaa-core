@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="93ffafd9-adfb-4530-ab9b-9a89100a2f39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[slizaa-core] clean install.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core-p2/org.slizaa.core.p2-repo/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core-p2/org.slizaa.core.p2-repo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/bnd.bnd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/epl-v10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/ClasspathScannerFactoryBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/DefaultClassAnnotationHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/IClassAnnotationMatchHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/IClasspathScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/IClasspathScannerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/IClasspathScannerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/IFileMatchHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/IFileMatchHandlerTransformator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/IMethodAnnotationMatchHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/ClassAnnotationMatchProcessorAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/ClasspathScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/ClasspathScannerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/EquinoxClassLoaderHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/FilenameMatchProcessorAdaptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/MethodAnnotationMatchProcessorAdaptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/SlizaaPluginUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/osgi/Activator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/osgi/EquinoxExtensionBundleClasspathScannerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/osgi/ExtensionBundleTracker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/main/java/org/slizaa/core/classpathscanner/internal/osgi/ExtensionHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/test/java/org/slizaa/core/classpathscanner/ClasspathScannerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/test/java/org/slizaa/core/classpathscanner/TestAnnotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/test/java/org/slizaa/core/classpathscanner/TestClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/src/test/resources/test.cypher" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/bnd.bnd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/src/main/java/org/slizaa/core/jersey/osgi/SlizaaCoreRestServiceComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/src/main/java/org/slizaa/core/jersey/osgi/SlizaaJerseyApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/src/main/java/org/slizaa/core/jersey/osgi/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/src/main/java/org/slizaa/core/jersey/osgi/StatusResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/src/main/java/org/slizaa/core/jersey/osgi/read-me.txt" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.implementation/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-core-p2/org.slizaa.core.p2-repo/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.boltclient.testfwk/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.classpathscanner/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.jersey.osgi/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.api/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-mojos/ecoregenerator-maven-plugin/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.boltclient/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1072191112">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="org.slizaa.core:org.slizaa.core.parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="org.slizaa.core:org.slizaa.core.parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="576" />
+    <option name="y" value="84" />
+    <option name="width" value="2928" />
+    <option name="height" value="1791" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="org.slizaa.core.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slizaa-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org.slizaa.core.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slizaa-core" type="462c0819:PsiDirectoryNode" />
+              <item name="slizaa-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../slizaa-application" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="384" y="56" width="1952" height="1194" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2552854" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32956687" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Key Promoter X" order="4" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="5" visible="true" weight="0.32980973" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2486">
+          <caret line="198" lean-forward="true" selection-start-line="198" selection-end-line="198" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

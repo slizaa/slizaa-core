@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="copydependencies-maven-plugin" />
+        <module name="ecoregenerator-maven-plugin" />
+        <module name="org.slizaa.core.boltclient" />
+        <module name="org.slizaa.core.boltclient.testfwk" />
+        <module name="org.slizaa.core.mvnresolver.api" />
+        <module name="org.slizaa.core.mvnresolver.implementation" />
+        <module name="org.slizaa.core.mvnresolver.itest" />
+        <module name="org.slizaa.core.mvnresolver.uber" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="org.slizaa.core.classpathscanner" target="1.8" />
+      <module name="org.slizaa.core.jersey.osgi" target="1.8" />
+      <module name="org.slizaa.core.p2-repo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
