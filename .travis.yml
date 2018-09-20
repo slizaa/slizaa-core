@@ -8,8 +8,3 @@ env:
   - secure: ZTIKqFeTcyqKb6mq9Jc3ClFvc+q0RPN9+Mp4EjdchHHqOJQ2NxJxKvkb5URtH7KcGXZeXejXeZsJeci8v6nwzFUY7sjnllYWBq4ZXwCHkcAKKOApmaN5G6nw9n87xdAmbjMApQluUg5Z04739504UwyHJIZx2nqdXQDidzv6k2CkDUVHzkbM9t9zDfUPwlj3kGQfeYmf6pAGK58fW5ib8rbjcebNTkl9+GOviPVf3vj9XQpmot9gKSRW3dldko4RVdL4uZuQH821BLkNkFJYioSOTrmq2tY5tEbXVKy9sBuhUX/rN7Tz1O+EhdEIpvNMfebg+VGQ24x+bJTqLMFPNscfYo168mcxq2JWFYrkgQ9QTUy5nbTO4n3y4l1YQ8USgffcJYsuyIL2gbIU0IvHJeKWT4WHR1lZPXYY33qpVAATrRZTDacegbpEuoxAVlwHthBEyhXZKpoqSUMzQSuRNKrBBdgSq/fkxFG6W+w6tiT+S5ZKSGUsJi2Ye26zS0KT68rBfrWSE2PLBXb2RFvrmEmxMdFSe4fdcggQmE53PzMW5FeDAJx2a7Jhv+nCW5KjehVLf3nvigATaCW7yshWBgK0HXeeCdnNRWKJwdsT9PVgSy5ZUjYHAYTnrD962fakgu0h7A5E7FeP8KnPLZd9L2u7LbrO63pkl4AP3Zoj9/g=
 script:
 - mvn clean deploy -s .travis/travis-maven-settings.xml -f pom.xml
-after_success:
-- chmod +x ./.travis/artifact-delete.sh
-- chmod +x ./.travis/artifact-upload.sh
-- "./.travis/artifact-delete.sh"
-- "./.travis/artifact-upload.sh"

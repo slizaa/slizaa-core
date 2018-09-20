@@ -18,7 +18,7 @@ import org.slizaa.core.boltclient.internal.BoltClientImpl;
 public class ServiceRegistrator {
 
   /** - */
-  private static Map<IBoltClient, Object> serviceRegistrationMap = new HashMap<>();
+  private static Map<IBoltClient, ServiceRegistration<IBoltClient>> serviceRegistrationMap = new HashMap<>();
 
   /**
    * <p>
@@ -54,8 +54,7 @@ public class ServiceRegistrator {
 
       //
       if (serviceRegistrationMap.containsKey(boltClient)) {
-        ServiceRegistration<IBoltClient> registration = (ServiceRegistration<IBoltClient>) serviceRegistrationMap
-            .get(boltClient);
+        ServiceRegistration<IBoltClient> registration = serviceRegistrationMap.get(boltClient);
         registration.unregister();
       }
 
