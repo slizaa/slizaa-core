@@ -9,15 +9,15 @@ import org.junit.Test;
 
 /**
  */
-public class Copy_Maven_Resolver extends AbstractCopyDependencyTest {
+public class CopyMavenResolverExcludeArtifactsTest extends AbstractCopyDependencyTest {
 
   /**
    * <p>
-   * Creates a new instance of type {@link Copy_Maven_Resolver}.
+   * Creates a new instance of type {@link CopyMavenResolverExcludeArtifactsTest}.
    * </p>
    */
-  public Copy_Maven_Resolver() {
-    super("copy-maven-resolver");
+  public CopyMavenResolverExcludeArtifactsTest() {
+    super("copy-maven-resolver-excludeArtifacts");
   }
 
   @Test
@@ -27,7 +27,8 @@ public class Copy_Maven_Resolver extends AbstractCopyDependencyTest {
     CopyDependenciesMojo mojo = (CopyDependenciesMojo) super.findCopyDependencyMojo("copyDependencies");
     mojo.execute();
 
+    //
     List<File> copiedFiles = getCopiedFiles();
-    assertThat(copiedFiles).hasSize(60);
+    assertThat(copiedFiles).hasSize(52);
   }
 }

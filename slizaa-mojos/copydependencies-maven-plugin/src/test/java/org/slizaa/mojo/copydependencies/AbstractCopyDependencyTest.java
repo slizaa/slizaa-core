@@ -59,7 +59,6 @@ public abstract class AbstractCopyDependencyTest {
    * <p>
    * </p>
    *
-   * @param projectName
    * @param goalName
    * @return
    * @throws Exception
@@ -98,8 +97,6 @@ public abstract class AbstractCopyDependencyTest {
   /**
    * <p>
    * </p>
-   *
-   * @param fileName
    */
   protected List<File> getCopiedFiles() {
     return Arrays.asList(_targetDirectory.listFiles());

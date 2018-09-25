@@ -1,4 +1,4 @@
-package org.slizaa.scanner.core.mvnresolver.itest;
+package org.slizaa.scanner.mvnresolver.itest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

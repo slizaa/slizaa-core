@@ -22,8 +22,6 @@
 				<configuration>
 					<targetDirectory>target/classes/libs</targetDirectory>
 					<coords>
-						<coord>org.slizaa.scanner.neo4j:org.slizaa.scanner.neo4j.graphdbfactory:1.0.0-SNAPSHOT</coord>
-						<coord>org.slizaa.scanner.neo4j:org.slizaa.scanner.neo4j.importer:1.0.0-SNAPSHOT</coord>
 						<coord>org.neo4j:neo4j:3.2.3</coord>
 						<coord>org.neo4j:neo4j-bolt:3.2.3</coord>
 						<coord>org.slf4j:slf4j-api:1.7.25</coord>
