@@ -1,5 +1,7 @@
 package org.slizaa.core.mvnresolver.uber;
 
+import org.xeustechnologies.jcl.JarClassLoader;
+
 import java.io.InputStream;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -8,21 +10,33 @@ import java.net.URL;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import org.xeustechnologies.jcl.JarClassLoader;
-
 public class UberServiceInvocationHandler<T> implements InvocationHandler {
 
-  @FunctionalInterface
-  public interface InstanceCreator<T> {
+  /**
+   * -
+   */
+  private Class<?> _proxyType;
 
-    /**
-     * Applies this function to the given argument.
-     *
-     * @param t
-     *          the function argument
-     * @return the function result
-     */
-    T apply(ClassLoader classLoader) throws Exception;
+  /**
+   * -
+   */
+  private T _service;
+
+  /**
+   * -
+   */
+  private InstanceCreator<T> _instanceCrator;
+
+  /**
+   * <p>
+   * Creates a new instance of type {@link UberServiceInvocationHandler}.
+   * </p>
+   *
+   * @param instanceCrator
+   */
+  public UberServiceInvocationHandler(Class<?> proxyType, InstanceCreator<T> instanceCrator) {
+    _proxyType = checkNotNull(proxyType, "Parameter proxyType must not be null.");
+    _instanceCrator = checkNotNull(instanceCrator, "Parameter instanceCrator must not be null.");
   }
 
   @SuppressWarnings("unchecked")
@@ -44,25 +58,43 @@ public class UberServiceInvocationHandler<T> implements InvocationHandler {
     }
   }
 
-  /** - */
-  private Class<?>           _proxyType;
-
-  /** - */
-  private T                  _service;
-
-  /** - */
-  private InstanceCreator<T> _instanceCrator;
+  /**
+   * <p>
+   * </p>
+   *
+   * @param reference
+   * @param errorMessage
+   * @return
+   */
+  private static <T> T checkNotNull(T reference, Object errorMessage) {
+    if (reference == null) {
+      throw new NullPointerException(String.valueOf(errorMessage));
+    }
+    return reference;
+  }
 
   /**
    * <p>
-   * Creates a new instance of type {@link UberService}.
    * </p>
    *
-   * @param instanceCrator
+   * @param expression
+   * @param errorMessage
    */
-  public UberServiceInvocationHandler(Class<?> proxyType, InstanceCreator<T> instanceCrator) {
-    _proxyType = checkNotNull(proxyType, "Parameter proxyType must not be null.");
-    _instanceCrator = checkNotNull(instanceCrator, "Parameter instanceCrator must not be null.");
+  private static void checkState(boolean expression, Object errorMessage) {
+    if (!expression) {
+      throw new IllegalStateException(String.valueOf(errorMessage));
+    }
+  }
+
+  private static boolean includeSlf4j() {
+
+    //
+    try {
+      UberServiceInvocationHandler.class.getClassLoader().loadClass("org.slf4j.impl.StaticLoggerBinder");
+      return false;
+    } catch (ClassNotFoundException e) {
+      return true;
+    }
   }
 
   /**
@@ -107,11 +139,17 @@ public class UberServiceInvocationHandler<T> implements InvocationHandler {
       //
       URL codeSource = _proxyType.getProtectionDomain().getCodeSource().getLocation();
       try (InputStream inputStream = this.getClass().getProtectionDomain().getCodeSource().getLocation().openStream();
-          ZipInputStream zipInputStream = new ZipInputStream(inputStream)) {
+           ZipInputStream zipInputStream = new ZipInputStream(inputStream)) {
 
         ZipEntry zipEntry = null;
         while ((zipEntry = zipInputStream.getNextEntry()) != null) {
           if (!zipEntry.isDirectory() && zipEntry.getName().startsWith("libs/")) {
+
+            //
+            if (zipEntry.getName().contains("slf4j") && !includeSlf4j()) {
+              continue;
+            }
+
             String url = "jar:" + codeSource.toExternalForm() + "!/" + zipEntry.getName();
             jcl.add(new URL(url));
           }
@@ -124,33 +162,17 @@ public class UberServiceInvocationHandler<T> implements InvocationHandler {
       e.printStackTrace();
       new RuntimeException(e);
     }
+
   }
 
-  /**
-   * <p>
-   * </p>
-   *
-   * @param reference
-   * @param errorMessage
-   * @return
-   */
-  private static <T> T checkNotNull(T reference, Object errorMessage) {
-    if (reference == null) {
-      throw new NullPointerException(String.valueOf(errorMessage));
-    }
-    return reference;
-  }
+  @FunctionalInterface
+  public interface InstanceCreator<T> {
 
-  /**
-   * <p>
-   * </p>
-   *
-   * @param expression
-   * @param errorMessage
-   */
-  private static void checkState(boolean expression, Object errorMessage) {
-    if (!expression) {
-      throw new IllegalStateException(String.valueOf(errorMessage));
-    }
+    /**
+     * Applies this function to the given argument.
+     *
+     * @return the function result
+     */
+    T apply(ClassLoader classLoader) throws Exception;
   }
 }

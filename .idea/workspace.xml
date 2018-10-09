@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ffafd9-adfb-4530-ab9b-9a89100a2f39" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.implementation/src/test/java/org/slizaa/core/mvnresolver/implementation/MvnResolverServiceImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.implementation/src/test/java/org/slizaa/core/mvnresolver/implementation/MvnResolverServiceImplementationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/AbstractEclipseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/AbstractEclipseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/MvnResolverServiceImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/MvnResolverServiceImplementationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/UberJarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/UberJarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/java/org/slizaa/mojo/copydependencies/AbstractCopyDependencyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/java/org/slizaa/mojo/copydependencies/AbstractCopyDependencyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/java/org/slizaa/mojo/copydependencies/Copy_Maven_Resolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/java/org/slizaa/mojo/copydependencies/CopyMavenResolverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/java/org/slizaa/mojo/copydependencies/Copy_Maven_Resolver_ExcludeArtifacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/java/org/slizaa/mojo/copydependencies/CopyMavenResolverExcludeArtifactsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/projects/copy-maven-resolver-excludeArtifacts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/projects/copy-maven-resolver-excludeArtifacts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/projects/copy-maven-resolver-excludeGroups/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/projects/copy-maven-resolver-excludeGroups/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/projects/copy-maven-resolver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/projects/copy-maven-resolver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/src/main/java/org/slizaa/core/mvnresolver/uber/UberServiceInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/src/main/java/org/slizaa/core/mvnresolver/uber/UberServiceInvocationHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.implementation/target/" />
     <ignored path="$PROJECT_DIR$/slizaa-core-p2/org.slizaa.core.p2-repo/target/" />
@@ -29,6 +22,7 @@
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/slizaa-mojos/ecoregenerator-maven-plugin/target/" />
     <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.boltclient/target/" />
+    <ignored path="$PROJECT_DIR$/slizaa-core/org.slizaa.core.boltserver.testfwk/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,38 +33,40 @@
     <session id="-1072191112">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.0" value="5" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ecore" value="2" />
-          <entry key="java" value="8" />
-          <entry key="xml" value="16" />
+          <entry key="java" value="18" />
+          <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="18" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="16" />
+          <entry key="XML" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="21" />
-          <entry key="java" value="8" />
-          <entry key="xml" value="27" />
+          <entry key="java" value="329" />
+          <entry key="xml" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="329" />
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="XML" value="27" />
+          <entry key="XML" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -78,7 +74,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -95,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/projects/copy-maven-resolver/pom.xml" />
         <option value="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/java/org/slizaa/mojo/copydependencies/AbstractCopyDependencyTest.java" />
         <option value="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/java/org/slizaa/mojo/copydependencies/Copy_Maven_Resolver_Test.java" />
@@ -105,7 +107,16 @@
         <option value="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/java/org/slizaa/mojo/copydependencies/CopyMavenResolverExcludeArtifactsTest.java" />
         <option value="$PROJECT_DIR$/slizaa-mojos/copydependencies-maven-plugin/src/test/projects/copy-maven-resolver-excludeGroups/pom.xml" />
         <option value="$PROJECT_DIR$/slizaa-mojos/ecoregenerator-maven-plugin/src/test/projects/ecore-generator-2/pom.xml" />
+        <option value="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.implementation/pom.xml" />
+        <option value="$PROJECT_DIR$/slizaa-core/org.slizaa.core.boltserver.testfwk/pom.xml" />
+        <option value="$PROJECT_DIR$/slizaa-core/org.slizaa.core.boltserver.testfwk/src/test/java/org/slizaa/core/boltserver/testfwk/TestTest.java" />
+        <option value="$PROJECT_DIR$/slizaa-core/org.slizaa.core.boltserver.testfwk/src/main/java/org/slizaa/core/boltserver/testfwk/PredefinedBoltDatabase.java" />
         <option value="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/UberJarTest.java" />
+        <option value="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/AbstractEclipseTest.java" />
+        <option value="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/MvnResolverServiceImplementationTest.java" />
+        <option value="$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/src/main/java/org/slizaa/core/mvnresolver/uber/UberServiceInvocationHandler.java" />
       </list>
     </option>
   </component>
@@ -144,8 +155,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="576" />
-    <option name="y" value="84" />
+    <option name="x" value="306" />
+    <option name="y" value="249" />
     <option name="width" value="2928" />
     <option name="height" value="1791" />
   </component>
@@ -156,6 +167,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,12 +176,15 @@
               <item name="org.slizaa.core.parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="slizaa-core" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="org.slizaa.core.parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slizaa-core" type="462c0819:PsiDirectoryNode" />
+              <item name="slizaa-core" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -176,6 +192,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -196,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Ecore_Generator_2_Test">
+  <component name="RunManager" selected="Maven.org.slizaa.core.parent [clean,install]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -219,21 +238,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.slizaa.mojo.copydependencies" />
       <option name="MAIN_CLASS_NAME" value="org.slizaa.mojo.copydependencies.CopyMavenResolverExcludeArtifactsTest" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CopyMavenResolverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="copydependencies-maven-plugin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.slizaa.mojo.copydependencies.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.slizaa.mojo.copydependencies" />
-      <option name="MAIN_CLASS_NAME" value="org.slizaa.mojo.copydependencies.CopyMavenResolverTest" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -269,31 +273,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestTest.testTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org.slizaa.core.boltserver.testfwk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.slizaa.core.boltserver.testfwk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.slizaa.core.boltserver.testfwk" />
+      <option name="MAIN_CLASS_NAME" value="org.slizaa.core.boltserver.testfwk.TestTest" />
+      <option name="METHOD_NAME" value="testTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="org.slizaa.core.parent [clean,install]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="JUnit.CopyMavenResolverTest" />
       <item itemvalue="JUnit.CopyMavenResolverExcludeArtifactsTest" />
       <item itemvalue="JUnit.Ecore_Generator_2_Test" />
       <item itemvalue="JUnit.Ecore_Generator_Test" />
+      <item itemvalue="JUnit.TestTest.testTest" />
+      <item itemvalue="Maven.org.slizaa.core.parent [clean,install]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Maven.org.slizaa.core.parent [clean,install]" />
+        <item itemvalue="JUnit.TestTest.testTest" />
         <item itemvalue="JUnit.Ecore_Generator_2_Test" />
         <item itemvalue="JUnit.Ecore_Generator_Test" />
         <item itemvalue="JUnit.CopyMavenResolverExcludeArtifactsTest" />
-        <item itemvalue="JUnit.CopyMavenResolverTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="CopyMavenResolverExcludeArtifactsTest - 2018.09.24 at 21h 49m 23s.xml">
-      <configuration name="CopyMavenResolverExcludeArtifactsTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CopyMavenResolverTest - 2018.09.24 at 21h 54m 45s.xml">
       <configuration name="CopyMavenResolverTest" configurationId="JUnit" />
     </history-entry>
@@ -321,31 +367,34 @@
     <history-entry file="Ecore_Generator_2_Test - 2018.09.24 at 22h 10m 52s.xml">
       <configuration name="Ecore_Generator_2_Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestTest_testTest - 2018.09.27 at 20h 25m 34s.xml">
+      <configuration name="TestTest.testTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2575" height="1424" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19403578" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.497678" visible="true" weight="0.1888668" />
+      <window_info id="Structure" order="1" sideWeight="0.50232196" side_tool="true" visible="true" weight="0.1888668" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32972136" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4998012" weight="0.32894737" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4998012" weight="0.42724457" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32972136" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32894737" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5001988" side_tool="true" weight="0.32894737" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32972136" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Key Promoter X" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.24811134" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.1530815" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,9 +456,7 @@
     <entry file="file://$PROJECT_DIR$/slizaa-mojos/ecoregenerator-maven-plugin/src/test/projects/ecore-generator-2/target/workspace/org.slizaa.hierarchicalgraph.core.model/model/hierarchicalgraph.ecore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/slizaa-mojos/ecoregenerator-maven-plugin/src/test/projects/ecore-generator-2/model/hierarchicalgraph-graphdb.ecore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/slizaa-mojos/ecoregenerator-maven-plugin/src/test/projects/ecore-generator-2/model/hierarchicalgraph-graphdb.ecore" />
     <entry file="file://$PROJECT_DIR$/slizaa-mojos/ecoregenerator-maven-plugin/src/test/java/org/slizaa/mojos/ecoregenerator/AbstractEcoreGeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-697">
@@ -457,26 +504,144 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.implementation/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.boltserver.testfwk/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.boltserver.testfwk/src/main/java/org/slizaa/core/boltserver/testfwk/PredefinedBoltDatabase.java" />
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.boltserver.testfwk/src/test/java/org/slizaa/core/boltserver/testfwk/TestTest.java" />
     <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+        <state relative-caret-position="629">
+          <caret line="68" column="59" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/src/main/java/org/slizaa/core/mvnresolver/MvnResolverServiceFactoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="179" column="67" lean-forward="true" selection-start-line="179" selection-start-column="67" selection-end-line="179" selection-end-column="67" />
+        <state relative-caret-position="2499">
+          <caret line="147" column="31" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/AbstractEclipseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/MvnResolverServiceImplementationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.itest/src/test/java/org/slizaa/scanner/core/mvnresolver/itest/UberJarTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.uber/src/main/java/org/slizaa/core/mvnresolver/uber/UberServiceInvocationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="173" column="34" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slizaa-core/org.slizaa.core.mvnresolver.api/src/main/java/org/slizaa/core/mvnresolver/api/IMvnResolverService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1241">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>parent|core</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

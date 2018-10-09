@@ -17,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="org.slizaa.core.boltserver.testfwk" target="1.8" />
       <module name="org.slizaa.core.classpathscanner" target="1.8" />
       <module name="org.slizaa.core.jersey.osgi" target="1.8" />
       <module name="org.slizaa.core.p2-repo" target="1.8" />
