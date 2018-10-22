@@ -63,6 +63,7 @@
 		<module>slizaa-core/org.slizaa.core.mvnresolver.implementation</module>
 		<module>slizaa-core/org.slizaa.core.mvnresolver.uber</module>
 		<module>slizaa-core/org.slizaa.core.mvnresolver.itest</module>
+		<module>slizaa-core/org.slizaa.core.progressmonitor</module>
 	</modules>
 
 	<dependencyManagement>
