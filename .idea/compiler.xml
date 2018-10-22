@@ -14,6 +14,7 @@
         <module name="org.slizaa.core.mvnresolver.implementation" />
         <module name="org.slizaa.core.mvnresolver.itest" />
         <module name="org.slizaa.core.mvnresolver.uber" />
+        <module name="org.slizaa.core.progressmonitor" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

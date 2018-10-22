@@ -305,7 +305,7 @@ public class DefaultProgressMonitor implements IProgressMonitor {
          *
          */
         public ConsoleLogger() {
-            this.printStream = checkNotNull(System.out);
+            this(System.out);
         }
 
 
