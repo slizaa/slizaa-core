@@ -1,12 +1,19 @@
 package org.slizaa.core.mvnresolver.uber;
 
-import org.xeustechnologies.jcl.JarClassLoader;
+import org.slizaa.core.mvnresolver.api.IMvnResolverServiceFactory;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.net.URL;
+import java.net.URLClassLoader;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -133,30 +140,8 @@ public class UberServiceInvocationHandler<T> implements InvocationHandler {
     }
 
     try {
-      //
-      JarClassLoader jcl = new JarClassLoader();
 
-      //
-      URL codeSource = _proxyType.getProtectionDomain().getCodeSource().getLocation();
-      try (InputStream inputStream = this.getClass().getProtectionDomain().getCodeSource().getLocation().openStream();
-           ZipInputStream zipInputStream = new ZipInputStream(inputStream)) {
-
-        ZipEntry zipEntry = null;
-        while ((zipEntry = zipInputStream.getNextEntry()) != null) {
-          if (!zipEntry.isDirectory() && zipEntry.getName().startsWith("libs/")) {
-
-            //
-            if (zipEntry.getName().contains("slf4j") && !includeSlf4j()) {
-              continue;
-            }
-
-            String url = "jar:" + codeSource.toExternalForm() + "!/" + zipEntry.getName();
-            jcl.add(new URL(url));
-          }
-        }
-      }
-
-      _service = _instanceCrator.apply(jcl);
+      _service = _instanceCrator.apply(createTemporaryClassLoader(_proxyType));
 
     } catch (Exception e) {
       e.printStackTrace();
@@ -165,6 +150,51 @@ public class UberServiceInvocationHandler<T> implements InvocationHandler {
 
   }
 
+  /**
+   *
+   * @return
+   * @throws IOException
+   */
+  private static ClassLoader createTemporaryClassLoader(Class<?> proxyType) throws IOException {
+
+    //
+    List<URL> urlList = new ArrayList<>();
+
+    //
+    URL codeSource = proxyType.getProtectionDomain().getCodeSource().getLocation();
+    InputStream inputStream = codeSource.openStream();
+
+    ZipInputStream zipInputStream = new ZipInputStream(inputStream);
+
+    ZipEntry zipEntry = null;
+
+    while ((zipEntry = zipInputStream.getNextEntry()) != null) {
+
+      //
+      if (!zipEntry.isDirectory() && zipEntry.getName().startsWith("libs/")) {
+
+        // Create a temporary file
+        Path path = Files.createTempFile(null, ".jar");
+
+        // Delete the file on exit
+        path.toFile().deleteOnExit();
+
+        // Copy the content of my jar into the temporary file
+        Files.copy(zipInputStream, path, StandardCopyOption.REPLACE_EXISTING);
+
+        // add the url to the url list
+        urlList.add(path.toFile().toURI().toURL());
+      }
+    }
+
+    // create the url class loader
+    return new URLClassLoader(urlList.toArray(new URL[0]), proxyType.getClassLoader());
+  }
+
+  /**
+   *
+   * @param <T>
+   */
   @FunctionalInterface
   public interface InstanceCreator<T> {
 
