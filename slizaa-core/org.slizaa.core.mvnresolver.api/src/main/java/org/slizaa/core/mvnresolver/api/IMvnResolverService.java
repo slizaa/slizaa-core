@@ -27,6 +27,9 @@ public interface IMvnResolverService {
    */
   File[] resolve(String... coords);
 
+
+  File resolveArtifact(String canonicalForm);
+  
   /**
    * <p>
    * Create a new {@link IMvnResolverJob}. Using a {@link IMvnResolverJob} instead of calling
@@ -151,4 +154,5 @@ public interface IMvnResolverService {
      */
     URL[] resolveToUrlArray();
   }
+
 }

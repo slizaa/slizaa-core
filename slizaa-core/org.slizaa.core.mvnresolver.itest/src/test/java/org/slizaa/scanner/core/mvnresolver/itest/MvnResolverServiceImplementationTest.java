@@ -13,7 +13,7 @@ public class MvnResolverServiceImplementationTest {
 
   @Test
   public void testIt() {
-
+	  
     IMvnResolverServiceFactory mvnResolverServiceFactory = MvnResolverServiceFactoryFactory
         .createNewResolverServiceFactory();
 
@@ -24,6 +24,6 @@ public class MvnResolverServiceImplementationTest {
     File[] files = impl.resolve("org.neo4j.test:neo4j-harness:2.3.3");
 
     //
-    assertThat(files).hasSize(75);
+    assertThat(files).hasSize(74);
   }
 }

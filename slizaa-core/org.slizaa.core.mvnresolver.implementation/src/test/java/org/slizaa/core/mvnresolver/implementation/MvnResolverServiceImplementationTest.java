@@ -46,7 +46,7 @@ public class MvnResolverServiceImplementationTest {
     List<String> names = Arrays.asList(files).stream().map(file -> file.getName()).collect(Collectors.toList());
 
     //
-    assertThat(files).hasSize(75);
+    assertThat(files).hasSize(74);
     assertThat(names).contains("neo4j-harness-2.3.3.jar");
     assertThat(names).contains("neo4j-2.3.3.jar");
     assertThat(names).contains("neo4j-kernel-2.3.3.jar");
@@ -73,7 +73,6 @@ public class MvnResolverServiceImplementationTest {
     assertThat(names).contains("neo4j-consistency-check-2.3.3.jar");
     assertThat(names).contains("neo4j-consistency-check-legacy-2.3.3.jar");
     assertThat(names).contains("neo4j-server-2.3.3.jar");
-    assertThat(names).contains("neo4j-2.3.3.pom");
     assertThat(names).contains("server-api-2.3.3.jar");
     assertThat(names).contains("jsr311-api-1.1.2.r612.jar");
     assertThat(names).contains("neo4j-browser-2.3.3.jar");
@@ -163,7 +162,7 @@ public class MvnResolverServiceImplementationTest {
     //
     File[] files = this._mvnResolverService.newMvnResolverJob()
         .withDependencies("net.bytebuddy:byte-buddy:jar:1.8.5", "org.mockito:mockito-core:jar:2.18.3")
-        .withExclusionPattern("*:byte-buddy-*").resolve();
+        .withExclusionPattern("net.bytebuddy:byte-buddy-agent").resolve();
     List<String> names = Arrays.asList(files).stream().map(file -> file.getName()).collect(Collectors.toList());
 
     //

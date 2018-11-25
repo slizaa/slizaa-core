@@ -48,15 +48,6 @@ public interface IMvnResolverServiceFactory {
      * <p>
      * </p>
      *
-     * @param localRepoDirectory
-     * @return
-     */
-    MvnResolverServiceFactoryBuilder withLocalRepository(File localRepoDirectory);
-
-    /**
-     * <p>
-     * </p>
-     *
      * @return
      */
     IMvnResolverService create();
