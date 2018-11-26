@@ -20,64 +20,70 @@ import org.slizaa.core.mvnresolver.api.IMvnResolverServiceFactory;
  */
 public class MvnResolverServiceFactoryImplementation implements IMvnResolverServiceFactory {
 
-	/**
-	 * {@inheritDoc}
-	 */
-	@Override
-	public MvnResolverServiceFactoryBuilder newMvnResolverService() {
-		Thread.currentThread().setContextClassLoader(this.getClass().getClassLoader());
-		return new MvnResolverServiceFactoryBuilderImplementation();
-	}
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public MvnResolverServiceFactoryBuilder newMvnResolverService() {
 
-	/**
-	 * <p>
-	 * </p>
-	 *
-	 * @author Gerd W&uuml;therich (gerd@gerd-wuetherich.de)
-	 */
-	public static class MvnResolverServiceFactoryBuilderImplementation implements MvnResolverServiceFactoryBuilder {
+        ClassLoader current = Thread.currentThread().getContextClassLoader();
 
-		/** - */
-		private ConfigurableMavenResolverSystem _resolverSystem;
+        try {
+            Thread.currentThread().setContextClassLoader(this.getClass().getClassLoader());
+            return new MvnResolverServiceFactoryBuilderImplementation();
+        } finally {
+            Thread.currentThread().setContextClassLoader(current);
+        }
+    }
 
-		/**
-		 * <p>
-		 * Creates a new instance of type
-		 * {@link MvnResolverServiceFactoryBuilderImplementation}.
-		 * </p>
-		 */
-		public MvnResolverServiceFactoryBuilderImplementation() {
-			_resolverSystem = Resolvers.use(ConfigurableMavenResolverSystem.class);
-		}
+    /**
+     * <p>
+     * </p>
+     *
+     * @author Gerd W&uuml;therich (gerd@gerd-wuetherich.de)
+     */
+    public static class MvnResolverServiceFactoryBuilderImplementation implements MvnResolverServiceFactoryBuilder {
 
-		/**
-		 * {@inheritDoc}
-		 */
-		@Override
-		public MvnResolverServiceFactoryBuilder withRemoteRepository(String id, String url) {
-			MavenRemoteRepository mavenRemoteRepository = MavenRemoteRepositories.createRemoteRepository("central", "http://repo1.maven.org/maven2", "default");
-			mavenRemoteRepository.setUpdatePolicy(MavenUpdatePolicy.UPDATE_POLICY_NEVER);
-			_resolverSystem.withRemoteRepo(mavenRemoteRepository);
-			return this;
-		}
+        /** - */
+        private ConfigurableMavenResolverSystem _resolverSystem;
 
-		/**
-		 * {@inheritDoc}
-		 */
-		@Override
-		public MvnResolverServiceFactoryBuilder withDefaultRemoteRepository() {
-			return withRemoteRepository("central", "http://repo1.maven.org/maven2");
-		}
+        /**
+         * <p>
+         * Creates a new instance of type
+         * {@link MvnResolverServiceFactoryBuilderImplementation}.
+         * </p>
+         */
+        public MvnResolverServiceFactoryBuilderImplementation() {
+            _resolverSystem = Resolvers.use(ConfigurableMavenResolverSystem.class);
+        }
 
-		/**
-		 * {@inheritDoc}
-		 */
-		@Override
-		public IMvnResolverService create() {
-			MvnResolverServiceImplementation serviceImplementation = new MvnResolverServiceImplementation();
-			serviceImplementation.initialize(_resolverSystem);
-			return serviceImplementation;
-		}
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public MvnResolverServiceFactoryBuilder withRemoteRepository(String id, String url) {
+            MavenRemoteRepository mavenRemoteRepository = MavenRemoteRepositories.createRemoteRepository(id, url, "default");
+            mavenRemoteRepository.setUpdatePolicy(MavenUpdatePolicy.UPDATE_POLICY_NEVER);
+            _resolverSystem.withRemoteRepo(mavenRemoteRepository);
+            return this;
+        }
 
-	}
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public MvnResolverServiceFactoryBuilder withDefaultRemoteRepository() {
+            return withRemoteRepository("central", "http://repo1.maven.org/maven2");
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public IMvnResolverService create() {
+            MvnResolverServiceImplementation serviceImplementation = new MvnResolverServiceImplementation();
+            serviceImplementation.initialize(_resolverSystem);
+            return serviceImplementation;
+        }
+    }
 }

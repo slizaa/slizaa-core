@@ -60,7 +60,7 @@ public class MvnResolverServiceImplementation implements IMvnResolverService {
 	 * <p>
 	 * </p>
 	 *
-	 * @param jobImplementation
+	 * @param job
 	 * @return
 	 */
 	File[] resolve(MvnResolverJobImplementation job) {

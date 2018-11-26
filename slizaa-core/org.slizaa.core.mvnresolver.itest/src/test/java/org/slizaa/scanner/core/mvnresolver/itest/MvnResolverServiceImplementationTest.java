@@ -11,19 +11,17 @@ import org.slizaa.core.mvnresolver.api.IMvnResolverServiceFactory;
 
 public class MvnResolverServiceImplementationTest {
 
-  @Test
-  public void testIt() {
-	  
-    IMvnResolverServiceFactory mvnResolverServiceFactory = MvnResolverServiceFactoryFactory
-        .createNewResolverServiceFactory();
+    @Test
+    public void testIt() {
 
-    //
-    IMvnResolverService impl = mvnResolverServiceFactory.newMvnResolverService().create();
+        //
+        IMvnResolverService mvnResolverService = MvnResolverServiceFactoryFactory
+                .createNewResolverServiceFactory().newMvnResolverService().create();
 
-    //
-    File[] files = impl.resolve("org.neo4j.test:neo4j-harness:2.3.3");
+        //
+        File[] files = mvnResolverService.resolve("org.neo4j.test:neo4j-harness:2.3.3");
 
-    //
-    assertThat(files).hasSize(74);
-  }
+        //
+        assertThat(files).hasSize(74);
+    }
 }
