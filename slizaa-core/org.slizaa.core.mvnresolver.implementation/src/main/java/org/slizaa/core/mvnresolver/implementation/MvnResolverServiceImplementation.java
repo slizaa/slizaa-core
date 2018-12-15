@@ -6,14 +6,14 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.jboss.shrinkwrap.resolver.api.Resolvers;
 import org.jboss.shrinkwrap.resolver.api.maven.ConfigurableMavenResolverSystem;
-import org.jboss.shrinkwrap.resolver.api.maven.MavenResolverSystem;
 import org.jboss.shrinkwrap.resolver.api.maven.ScopeType;
+import org.jboss.shrinkwrap.resolver.api.maven.coordinate.MavenCoordinates;
 import org.jboss.shrinkwrap.resolver.api.maven.coordinate.MavenDependencies;
 import org.jboss.shrinkwrap.resolver.api.maven.coordinate.MavenDependency;
 import org.jboss.shrinkwrap.resolver.api.maven.coordinate.MavenDependencyExclusion;
 import org.slizaa.core.mvnresolver.api.IMvnResolverService;
+import org.slizaa.core.mvnresolver.api.IMvnCoordinate;
 
 /**
  * <p>
@@ -39,6 +39,17 @@ public class MvnResolverServiceImplementation implements IMvnResolverService {
 	public IMvnResolverJob newMvnResolverJob() {
 		return new MvnResolverJobImplementation(this);
 	}
+
+	/**
+	 *
+	 * @param coordinate
+	 * @return
+	 */
+	@Override
+	public IMvnCoordinate parseCoordinate(String coordinate) {
+		return new MvnCoordinateImplementation(MavenCoordinates.createCoordinate(coordinate));
+	}
+
 
 	/**
 	 * {@inheritDoc}

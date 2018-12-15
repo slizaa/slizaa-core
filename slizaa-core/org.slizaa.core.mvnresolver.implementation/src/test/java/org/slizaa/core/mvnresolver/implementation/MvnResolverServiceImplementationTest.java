@@ -9,8 +9,8 @@ import java.util.stream.Collectors;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.slizaa.core.mvnresolver.api.IMvnCoordinate;
 import org.slizaa.core.mvnresolver.api.IMvnResolverService;
-import org.slizaa.core.mvnresolver.implementation.MvnResolverServiceFactoryImplementation;
 
 /**
  * <p>
@@ -32,6 +32,19 @@ public class MvnResolverServiceImplementationTest {
 
     // create the resolver service
     this._mvnResolverService = new MvnResolverServiceFactoryImplementation().newMvnResolverService().create();
+  }
+
+  /**
+   *
+   */
+  @Test
+  public void test_MvnCoordinates() {
+
+    IMvnCoordinate mvnCoordinate = this._mvnResolverService.parseCoordinate("org.neo4j.test:neo4j-harness:2.3.3");
+
+    assertThat(mvnCoordinate.getGroupId()).isEqualTo("org.neo4j.test");
+    assertThat(mvnCoordinate.getArtifactId()).isEqualTo("neo4j-harness");
+    assertThat(mvnCoordinate.getVersion()).isEqualTo("2.3.3");
   }
 
   /**

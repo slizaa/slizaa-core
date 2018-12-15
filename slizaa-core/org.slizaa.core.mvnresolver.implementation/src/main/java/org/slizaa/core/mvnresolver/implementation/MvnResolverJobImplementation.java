@@ -3,7 +3,7 @@
  */
 package org.slizaa.core.mvnresolver.implementation;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import org.slizaa.core.mvnresolver.api.IMvnResolverService.IMvnResolverJob;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -11,7 +11,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.slizaa.core.mvnresolver.api.IMvnResolverService.IMvnResolverJob;
+import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
  * <p>
@@ -49,8 +49,8 @@ class MvnResolverJobImplementation implements IMvnResolverJob {
   }
 
   @Override
-  public IMvnResolverJob withDependency(String coord) {
-    this._coords.add(checkNotNull(coord));
+  public IMvnResolverJob withDependency(String coordinate) {
+    this._coords.add(checkNotNull(coordinate));
     return this;
   }
 

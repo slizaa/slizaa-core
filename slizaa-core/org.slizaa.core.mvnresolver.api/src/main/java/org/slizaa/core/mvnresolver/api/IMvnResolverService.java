@@ -15,6 +15,13 @@ import java.net.URL;
 public interface IMvnResolverService {
 
   /**
+   *
+   * @param coordinate
+   * @return
+   */
+  IMvnCoordinate parseCoordinate(String coordinate);
+
+  /**
    * <p>
    * Resolves the maven artifacts with the specified coordinates. The artifact coordinates have to be in the following
    * format: {@code <groupId>:<artifactId>[:<extension>[:<classifier>]]:<version>}
@@ -27,7 +34,11 @@ public interface IMvnResolverService {
    */
   File[] resolve(String... coords);
 
-
+  /**
+   *
+   * @param canonicalForm
+   * @return
+   */
   File resolveArtifact(String canonicalForm);
   
   /**
@@ -73,7 +84,7 @@ public interface IMvnResolverService {
      * <p>
      * </p>
      *
-     * @param coord
+     * @param coords
      * @return
      */
     IMvnResolverJob withDependencies(String... coords);
