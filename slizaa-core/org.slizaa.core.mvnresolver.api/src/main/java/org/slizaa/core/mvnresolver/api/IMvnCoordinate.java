@@ -11,4 +11,6 @@ public interface IMvnCoordinate {
   String getClassifier();
 
   String getVersion();
+  
+  String toCanonicalForm();
 }

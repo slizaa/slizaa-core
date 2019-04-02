@@ -62,4 +62,13 @@ public class MvnCoordinateImplementation implements IMvnCoordinate {
   public String getVersion() {
     return _mavenCoordinate.getVersion();
   }
+
+  /**
+   *
+   * @return
+   */
+  @Override
+  public String toCanonicalForm() {
+    return _mavenCoordinate.toCanonicalForm();
+  }
 }
